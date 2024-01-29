@@ -1,0 +1,28 @@
+nav
+{
+    background: linear-gradient(45deg, #4caf50, #3498db);
+    padding: 1%;
+    align-items: center;
+    text-align: center;
+}
+body {
+    background: linear-gradient(45deg, #4caf50, #3498db);
+    margin: 0;
+    padding: 0; 
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    text-align: center;
+}
+.h {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding for each link */
+    margin: 0 10px; /* Margin between links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+
+  .h:hover {
+    background-color: #555; /* Background color on hover */
+  }

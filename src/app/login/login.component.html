@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.component.css">
+    <title>Your Website Login</title>
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form" (ngSubmit)="validateAndSubmit()" #loginForm="ngForm" >
+    
+            <input type="text" id="first-name" name="firstName" placeholder="First Name" required
+                   [(ngModel)]="userInput.firstName">
+            <input type="text" id="last-name" name="lastName" placeholder="Last Name" required
+                   [(ngModel)]="userInput.lastName">
+            <input type="tel" id="mobile-no" name="mobileNo" placeholder="Mobile Number" required
+                   [(ngModel)]="userInput.mobileNo">
+            <input type="email" id="email" name="email" placeholder="Email" required
+                   [(ngModel)]="userInput.email">
+            <input type="password" id="password" name="password" placeholder="Password" required
+                   [(ngModel)]="userInput.password">
+    
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

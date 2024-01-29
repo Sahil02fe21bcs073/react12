@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING</title>
+    <link rel="stylesheet" href="shop.component.css">
+</head>
+<body>
+    <h1>SHOPPING</h1>
+    <div *ngFor="let item of items" class="item-container">
+        <img [src]="item.image" alt="{{ item.name }}">
+        <div class="item-details">
+            <h3>{{ item.name }}</h3>
+            <div class="price">Price: Rs {{ item.price }}</div>
+        </div>
+        <form (submit)="buyItem(item)">
+          <input type="number" [(ngModel)]="item.quantity" placeholder="Quantity" min="1" name="quantity">
+          <button type="submit">Buy</button>
+        </form>
+    </div>
+    <p class="total-bill">Total Bill: Rs {{ totalBill }}</p>
+</body>
+</html>

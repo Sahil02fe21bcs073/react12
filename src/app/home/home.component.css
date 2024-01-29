@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(45deg, #4caf50, #3498db);
+    margin: 0;
+    padding: 0; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.top-container 
+{
+    position: relative;
+    padding-top: 40px;
+}
+.bottom-container
+{  
+   padding: 10px 0 10px;
+}
+.contact-message
+{
+    width: 40%;
+    margin: 20px auto 30px;
+}
+.btn {
+    background: linear-gradient(45deg, #4caf50, #3498db);
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #555;
+  }
+  .copyright
+  {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 10px 0px;
+  }
+
+a
+{
+    color : white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;    
+}
+a:hover
+{
+    color: #EAF6F6;
+}
+h1
+{
+    font-size: 4rem;
+    margin: 40px auto 0 auto;
+}
+h2
+{
+    font-weight: normal;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+hr
+{
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 50px auto;
+}
